@@ -6,7 +6,7 @@
 function distinct(arr) {
     let result = []
     for(let i = 0 ; i < arr.length ; i++){
-        arr.sort();
+        arr.sort((a,b)=> a - b);
         if(arr[i] == arr[i + 1]){
             arr.shift()
             i--;
